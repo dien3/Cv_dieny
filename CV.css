@@ -1,0 +1,138 @@
+#utama{
+	width: 100%;
+	height: 100%;
+	background-color: #606C38;
+	margin: 0px;
+	float: left;
+	content: width: device-width, initial-scale: 1;
+}
+#atas{
+	width: 100%;
+	height:100px;
+	background-color: #606C38;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	float: left;
+}
+body{
+	font-family: "Bold 800","Poppins", sans-serif;
+	font-size: 15px;
+	color: #283618;	
+}
+li{
+	float: left;
+	font-size: 12px;
+	margin: 0px;
+	padding: 0px;
+	color: #FEFAE0;
+	background-color: #606C38;
+	border: none;
+}
+li:hover{
+	color: #FEFAE0;
+	background-color: #283618;
+}
+li:active{
+	color: #283618;
+	background-color: #FEFAE0;
+}
+li a{
+	text-decoration: none;
+	font-size: 12px;
+	padding: 10px 20px;
+	color: #FEFAE0;
+	display: block;
+}
+li a:active{
+	color: #283618;
+}
+a{
+    display: block;
+}
+	#tengah{
+	float: left;
+	width: 100%;
+	height: 550px;
+}
+.ket{
+	width: 100%;
+	height: 60px;
+	float: left;
+}
+#bawah{
+	height: 2100px;
+	background-color: #FEFAE0;
+	float: left;
+}
+tr{
+	height: 40px;
+	word-wrap: wrap text;
+}
+#judul{
+	width: 100%;
+	height: 100px;
+	margin-top: 80px;
+	text-align: center;
+	float: left;
+}
+#kiri{
+	float: left;
+	width: 45%;
+	height: 450px;
+	text-align: right;
+}
+#kanan{
+	float: left;
+	width: 55%;
+	height: 450px;
+}
+img{
+	margin right: 20px;
+}
+.kirmar{
+	margin-right: 50px;
+}
+.spasi{
+	line-height: 30px;
+	margin-top: 10px;
+}
+#end{
+	width: 100%;
+	height: 120px;
+	background-color: #DDA15E;
+	float: left;
+}
+ul{
+	list-style-type: none;
+}
+#awal{
+	text-transform: uppercase;
+	float: left;
+	width: 100%;
+}
+#tentang{
+	text-transform: uppercase;
+	float: left;
+}
+#pendidikan{
+	text-transform: uppercase;
+	float: left;
+}
+#skill{
+	text-transform: uppercase;
+	float: left;
+}
+#hobi{
+	text-transform: uppercase;
+	float: left;
+}
+h1, h3{
+	text-align: center;
+	padding-top: 100px;
+}
+.satu{
+	width: 100%;
+	height: 450px;
+	float: left;
+}
