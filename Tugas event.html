@@ -1,0 +1,126 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS_EVENT</title>
+	<style type="text/css">
+		body{
+			font-family: "Bold 800","Poppins", sans-serif;
+			margin: 0 auto;
+			content: width: device-width, initial-scale: 1;
+		}
+		#bb{
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			float: left;
+		}
+		#bkiri{
+			height: 100%;
+			width: 40%;
+			float: left;
+			margin: 0 auto;
+			background-image: url("daun.jpg");
+			background-repeat: repeat;
+			background-attachment: fixed;
+			background-size: auto 100%;
+		}
+		#bkanan{
+			width: 60%;
+			height: 100%;
+			float: left;
+			margin: 0 auto;
+			background-color: #283618;
+		}
+		#atas{
+			width: 100%;
+			height: 20%;
+			float: left;
+		}
+		.judul{
+			margin-left: 20%;
+			font-size: 20px;
+			color: white;
+		}
+		#bawah{
+			width: 100%;
+			height: 80%;
+			float: left;
+		}
+		form{
+			margin-left: 20%;
+			float: left;
+		}
+		table{
+			border-spacing: 20px;
+		}
+		img{
+			width: 25;
+			height: 25;
+		}
+		::placeholder{
+			color: #FEFAE0;
+			opacity: 1;
+		}
+		input{
+			border: none;
+			padding: 10 20;
+			color: #283618;
+			background-color: #606C38;
+		}
+		input:focus{
+			outline: none;
+			border: 2px solid white;
+		}
+		input[type=submit]{
+			text-align: center;
+			padding: 10 20;
+			color: #283618;
+			background-color: #FEFAE0;
+		}
+		td{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+	function okp() {
+		onkeypress=alert("Anda memasukan password, harap teliti");
+	}
+	function cek(){
+		var form=document.getElementById('fm').value;
+		if (form!=null) {
+			return true;
+		}else{
+			alert("Harap selanjutnya untuk diisi lengkap");
+		}
+	}
+	</script>
+</head>
+<body>
+<div id="bb">
+	<div id="bkiri"></div>
+	<div id="bkanan">
+		<div id="atas"></div>
+		<div id="bawah"><p class="judul">MASUK UNTUK MENGAKSES CV</p>
+		<form name="formmasuk" id="fm" method="post" action="Tugas CV.html">
+		<table>
+			<tr>
+				<td width="150px"><input type="nama" name="nl" placeholder="Nama Awal"></td><td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbethanychurch.org.uk%2Fwp-content%2Fuploads%2F2018%2F09%2Fprofile-icon-png-black-6.png&f=1&nofb=1" width="15px"></td>
+			</tr>
+			<tr>
+				<td width="150px"><input type="nama" name="nl2" placeholder="Nama Akhir" ></td><td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbethanychurch.org.uk%2Fwp-content%2Fuploads%2F2018%2F09%2Fprofile-icon-png-black-6.png&f=1&nofb=1" width="15px"></td>
+			</tr>
+			<tr>
+				<td><input type="email" name="email" placeholder="Email"></td><td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F36%2F36175.png&f=1&nofb=1" width="15px"></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="pw" id="pw" placeholder="Password" onclick="okp()"></td><td><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Finsurance-3%2F32%2Fsecurity-512.png&f=1&nofb=1" width="15px"></td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" name="masuk" value="Masuk" width="165" onclick="cek()"></td>
+			</tr>
+		</table>
+		</form></div>
+	</div>
+</div>
+</body>
+</html>
