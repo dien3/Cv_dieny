@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>CV_H1D020008</title>
 	<link rel="stylesheet" type="text/css" href="CV.css">
 
@@ -16,26 +15,24 @@
 https://coolors.co/palettes/trending
  -->
 </head>
-<body>
-<div id="utama">
-	<div id="atas">
-			<img src="lodg.png" width="70px" align="right">
-		<ul>
-			<li><a href="#awal">Awal</a></li>
-			<li><a href="#tentang">Tentang</a></li>
-			<li><a href="#pendidikan">Pendidikan</a></li>
-			<li><a href="#skill">Skill</a></li>
-			<li><a href="#hobi">Hobi</a></li>
-		</ul>
-	</div>
-		
-	<div id="tengah">
+<body id="utama">
+<header>
+	<img src="lodg.png" width="50px" align="right">
+	<ul>
+		<li><a href="#awal">Awal</a></li>
+		<li><a href="#tentang">Tentang</a></li>
+		<li><a href="#pendidikan">Pendidikan</a></li>
+		<li><a href="#skill">Skill</a></li>
+		<li><a href="#suka">Suka</a></li>
+		<li><a href="#kontak">Contact</a></li>
+	</ul>
+</header>
+<section id="tengah">
 	<div id="awal" class="ket">	
 		<h1>Curriculum<br>Vitae</h1><h3>Dieny 'Izzaty</h3>
 	</div>
-	</div>
-
-	<div id="bawah">
+</section>
+<section id="bawah">
 	<div class="satu">
 		<div id="tentang"></div>
 		<div id="judul">
@@ -108,28 +105,45 @@ https://coolors.co/palettes/trending
 		</div>
 	</div>
 
-	<div id="hobi" class="satu">
+	<div id="suka" class="satu">
 		<div id="judul">
-			<br><br><b>HOBI</b>
+			<br><br><b>LIKE</b>
 		</div>
 		<div id="kiri">
-			<p class="kirmar"><b>SEPERTI:</b><br><br></p>
+			<p class="kirmar"><b>>></b><br><br></p>
 		</div>
 		<div id="kanan">
 		<table>
-			<tr>
-				<td>Menggambar</td></tr>
-			<tr>
-				<td>Membaca</td></tr>
-			<tr>
-				<td>Menonton Film</td></tr>
+			<tr><td>Menggambar</td></tr>
+			<tr><td>Membaca</td></tr>
+			<tr><td>Menonton Film</td></tr>
 		</table>
 		</div>
+	</div>
+</section> 
 
-		<div id="end">
-			<p align="center"><b><font color="#BC6C25">Dieny 'Izzaty - H1D020008</font></b></p>
+<section id="end">
+	<div id="kontak" class="dua">
+		<div id="judul"><b>CONTACT</b></div>
+		<div>
+		<form action="" method="post" id="cform" name="cform">
+		<div id="kic">
+			<label for="cnama">Nama<span class="required">*</span></label><br>
+			<label for="cemail">Email<span class="required">*</span></label><br>
+			<label for="csubjek">Subjek</label><br>
+			<label for="cpesan">Pesan<span class="required">*</span></label><br><br><br><br>
+		</div>
+		<div id="kac" class="lh">
+			<input type="text" value="" size="35" id="cnama" name="cnama"><br>
+			<input type="text" value="" size="35" id="cemail" name="cemail"><br>
+			<input type="text" value="" size="35" id="csubjek" name="csubjek"><br>
+			<textarea cols="35" rows="12" id="cpesan" name="cpesan"></textarea> &nbsp;
+			<button id="submit">Kirim</button>
+		</div>
+		</form>	
 		</div>
 	</div>
-</div>
+</section>
+<p><center><b><font color="#BC6C25">copyright &copy; 2021 - Dieny 'Izzaty</font></b></center></p>
 </body>
 </html>
