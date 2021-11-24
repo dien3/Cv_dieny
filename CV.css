@@ -1,33 +1,29 @@
-#utama{
-	width: 100%;
-	height: 100%;
-	background-color: #606C38;
-	margin: 0px;
-	float: left;
-	content: width: device-width, initial-scale: 1;
-}
 header{
 	width: 100%;
-	height:60px;
-	background-color: #606C38;
-	position: -webkit-sticky;
-	position: sticky;
+	height:50px;
+	position: fixed;
 	top: 0;
 	float: left;
+	background-color: #606C38;
+}
+@media screen and (max-width: 650px){
+	header{
+		background-color: #283618;
+	}
 }
 body{
 	font-family: "Bold 800","Poppins", sans-serif;
 	font-size: 15px;
-	color: #283618;	
-	background-color: #283618;
 	margin: 0 auto;
 }
 ul{
 	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
 }
 li{
 	float: left;
-	font-size: 13px;
+	font-size: 15px;
 	color: #FEFAE0;
 	background-color: #606C38;
 	border: none;
@@ -42,7 +38,7 @@ li:active{
 }
 li a{
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 15px;
 	padding: 10px 20px;
 	color: #FEFAE0;
 	display: block;
@@ -52,18 +48,20 @@ li a:active{
 }
 a{
     display: block;
+    text-decoration: none;
 }
-#tengah{
+#tengah1{
 	float: left;
 	width: 100%;
-	height: 550px;
+	height: 700px;
+	background-color: #606C38;
 }
 .ket{
 	width: 100%;
 	height: 60px;
 	float: left;
 }
-#bawah{
+#tengah2{
 	height: 2000px;
 	background-image: linear-gradient(#FEFAE0,#DDA15E);
 	float: left;
@@ -74,26 +72,28 @@ tr{
 }
 #judul{
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	margin-top: 80px;
 	text-align: center;
+	font-weight: bold;
 	float: left;
 }
 #kiri{
 	float: left;
 	width: 45%;
-	height: 450px;
+	height: 500px;
 	text-align: right;
 }
 #kanan{
 	float: left;
 	width: 55%;
-	height: 450px;
+	height: 500px;
 }
 img{
 	margin right: 20px;
 }
 .kirmar{
+	width: 50% auto;
 	margin-right: 50px;
 }
 .spasi{
@@ -102,7 +102,7 @@ img{
 }
 #end{
 	width: 100%;
-	height: 750px;
+	height: 1000;
 	background-color: #DDA15E;
 	float: left;
 }
@@ -140,37 +140,195 @@ h1, h3{
 	height: 450px;
 	float: left;
 }
+
+
+/*----NAVBAR-----*/
+.topnav{
+	overflow: hidden;
+	background-color: #283618;
+}
+.topnav a {
+	float: left;
+	color: white;
+	display: block;
+	text-align: left;
+	padding: 10px 20px;
+	text-decoration: none;
+	font-size: 15px;
+	width: 100%;
+	display: none;
+}
+.topnav .ikonmenu{
+	display: none;
+}
+.topnav a:hover {
+	background-color: #FEFAE0;
+	color: #283618;
+}
+.topnav a:active{
+	background-color: #606C38;
+	color: #FEFAE0;
+}
+
+/*-----mengecil-----*/
+@media screen and (max-width: 650px){
+	ul{
+		display: none;
+	}
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.ikonmenu {
+		float: left;
+		display: block;
+	}
+}
+@media screen and (max-width: 650px) {
+	.topnav.responsive {position: relative;}
+	.topnav.responsive .ikonmenu {
+		position: fixed;
+		left: 0;
+		top: 0;
+	}
+	.topnav.responsive a {
+		float: none;
+		display: block;
+       	text-align: left;
+	}
+	.topnav.responsive {float: none;}
+	.topnav.responsive {position: relative;}
+	.topnav.responsive {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+}
+
+
+/*-----CONTACT-----*/
 .dua{
 	width: 100%;
-	height: 700px;
+	height: 600px;
 	float: left;
 }
-label{
-	color: #283618;
-	line-height: 3;
-	margin-right: 50px;
-}
-input, textarea{
+input[type=text], textarea{
 	background-color: #FEFAE0;
 	border: none;
 	border-color: none;
-	border-radius: 3;
 	outline: none;
 	float: left;
+	padding: 10px;
+	width: 100%;
+	resize: vertical;
 }
 input{
-	height: 35px;
+	height: 25px;
 }
-button{
+label {
+	padding: 12px 0 0 0;
+	display: inline-block;
+}
+input[type=submit] {
+	color: #FEFAE0;
+	background-color: #606C38;
+	padding: 10px 20px;
+	border: none;
+	float: right; 
 	width: 100px;
 	height: 40px;
+	font-size: 30;
+	font-family: "Bold 800","Poppins", sans-serif;
+	font-weight: bold;
+	margin-top: 10px;
+	line-height: 3px;
+}
+input[type=submit]:hover {
+	color: #FEFAE0;
+	background-color: #283618;
+}
+input[type=submit]:active {
+	color: #FEFAE0;
+	background-color: #606C38;
+}
+.col-25 {
+	float: left;
+	width: 25%;
+	margin-top: 6px;
+}
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#cform, #aform{
+	max-width:400px;
+	margin:auto;
+}
+@media screen and (max-width: 600px) {
+  #aform, #cform, .col-25, .col-75{
+  	display: block;
+  }
+  #aform, #cform.col-25, .col-75{
+    width: 100%;
+    margin-top: 0;
+  }
+  input[type=submit]{
+  	margin-top: 10px;
+  	float: right;
+  }
+}
+
+
+/* -----AKUN-----*/
+#masuk{
+	width: 100%;
+	height: 600px;
+	float: left;
+	background-color: #606C38;	
+}
+.imglogo{
+	float: left;
+	width: 25px;
+	height: 25px;
+	padding: 12px;
+}
+::placeholder{
+	color: #606C38;
+	opacity: 1;
+	font-style: italic;
+	font-size: 11px;
+	font-family: "Bold 800","Poppins", sans-serif;
+}
+.in input{
+	background-color: #FEFAE0;
+	border: none;
+	border-color: none;
+	outline: none;
+	float: left;
+	padding: 10px;
+	width: 300px;
+	margin-top: 6px;
+	font-size: 15px;
+	resize: vertical;
+}
+button{
+	float: right;
+	width: 100px;
+	height: 40px;
+	border: none;
 	color: #283618;
 	background-color: #FEFAE0;
-	border-radius: 3;
 	font-size: 30;
-	border: none;
 	font-family: "Bold 800","Poppins", sans-serif;
-	position: right;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-right: 50px;
+	line-height: 3px;
 }
 button:hover{
 	color: white;
@@ -180,20 +338,13 @@ button:active{
 	color: #283618;
 	background-color: #FEFAE0;
 }
+ 
 
-#kic{
-	width: 30%;
-	height: 450px;
-	text-align: right;
+/* -----footer----- */
+footer{
+	width: 100%;
+	height: 150px;
+	background-color: #283618;
 	float: left;
-}
-#kac{
-	width: 70%;
-	height: 500px;
-	float: left;
-}
-.lh{
-	line-height: 3;
-	word-wrap: all;
-	word-break: 3;
+	line-height: 50px;
 }
