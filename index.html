@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CV_H1D020008</title>
+	<link rel="stylesheet" type="text/css" href="CV.css">
+<!--	warna
+#BC6C25 coklat tua
+#DDA15E coklat muda
+#FEFAE0 krem putih
+#283618 ijo tua
+#606C38 ijo muda
+
+https://coolors.co/palettes/trending
+ -->
+ 	<script type="text/javascript">
+		function okp() {
+			onkeypress=alert("Anda memasukan password, harap teliti");
+		}
+		function cek(){
+			var form=document.getElementById('fm').value;
+			if (form!=null) {
+				return true;
+			}else{
+				alert("Harap selanjutnya untuk diisi lengkap");
+			}
+		}
+
+		function lihatmenu() {
+			var x = document.getElementById("menukecil");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+
+ 	</script>
+</head>
+<body>
+<header>
+	<img src="lodg.png" width="50px" align="right">
+	<div id="menu">
+		<div id="#menufull">
+			<ul>
+				<li><a href="#awal" >Awal</a></li>
+				<li><a href="#tentang">Tentang</a></li>
+				<li><a href="#pendidikan">Pendidikan</a></li>
+				<li><a href="#skill">Skill</a></li>
+				<li><a href="#suka">Suka</a></li>
+				<li><a href="#kontak">Contact</a></li>
+			</ul>
+		</div>
+
+		<div id="menukecil" class="topnav">
+				<a href="javascript:void(0);" onclick="lihatmenu()" class="ikonmenu" >&#9776;</span></a>
+				<a href="#awal" >Awal</a>
+				<a href="#tentang">Tentang</a>
+				<a href="#pendidikan">Pendidikan</a>
+				<a href="#skill">Skill</a>
+				<a href="#suka">Suka</a>
+				<a href="#kontak">Contact</a>
+		</div>
+	</div>
+</header>
+
+<section id="tengah1">
+	<div id="awal" class="ket">	
+		<h1>Curriculum<br>Vitae</h1><h3>Dieny 'Izzaty</h3>
+	</div>
+</section>
+<section id="tengah2">
+	<div class="satu">
+		<div id="tentang"></div>
+		<div id="judul">TENTANG</div>
+		<div id="kiri">
+			<img src="foto.jpeg" width="120px" align="right" class="kirmar">
+		</div>
+		<div id="kanan">
+		<table>
+			<tr><td width="100px"><b>NAMA</b></td>
+				<td>Dieny 'Izzaty</td></tr>
+			<tr>
+				<td><b>UMUR</b></td>
+				<td>19 Tahun</td></tr>
+			<tr>
+				<td><b>ALAMAT</b></td>
+				<td>Sawangan, Purwokerto</td></tr>
+			<tr>
+				<td><b>NIM</b></td>
+				<td>H1D020008</td></tr>
+			<tr>
+				<td><b>JURUSAN</b></td>
+				<td>Informatika - UNSOED</td></tr>
+			<tr>
+				<td colspan="2"><b>EMAIL</b></td></tr>
+			<tr>
+				<td colspan="2">dienyy9@gmail.com</td></tr>
+		</table>
+		</div>
+	</div>
+
+	<div id="pendidikan" class="satu">
+		<div id="judul">PENDIDIKAN</div>
+		<div id="kiri">
+			<p class="kirmar"><b>
+				2020 - Sekarang<br><br><br>
+				2017 - 2020<br><br>
+				2014 - 2017<br><br>
+				2008 - 2014<br><br>
+			</b></p>
+		</div>
+		<div id="kanan">
+			<p>
+				UNIVERSITAS JENDRAL SOEDIRMAN<br>S1 INFORMATIKA<br><br>
+				SMAIT AL IRSYAD PWT<br><br>
+				SMP AL IRSYAD PWT<br><br>
+				SD AL IRSYAD 01 PWT<br><br>
+			</p>
+		</div>
+	</div>
+
+	<div id="skill" class="satu">
+		<div id="judul">SKILL</div>
+		<div id="kiri">
+			<p class="kirmar"><b>KOMPUTER</b><br></p>
+		</div>
+		<div id="kanan">
+			<p class="spasi">
+				CorelDraw<br>
+				Photoshop<br>
+				Microsoft Word<br>
+				Microsoft Powerpoint<br>
+				Sketch Android<br>
+				</p>
+		</div>
+	</div>
+
+	<div id="suka" class="satu">
+		<div id="judul">LIKE</div>
+		<div id="kiri">
+			<p class="kirmar"><b>>></b><br><br></p>
+		</div>
+		<div id="kanan">
+		<table>
+			<tr><td>Menggambar</td></tr>
+			<tr><td>Membaca</td></tr>
+			<tr><td>Menonton Film</td></tr>
+		</table>
+		</div>
+	</div>
+</section> 
+
+<section id="end">
+<div id="kontak" class="dua">
+	<div id="judul">CONTACT</div>
+	<div>
+	<form action="#awal" method="post" id="cform" name="cform">
+		<div class="row">
+			<div class="col-25">
+				<label for="cnama">Nama</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="cnama" name="cnama">
+    		</div>
+   		</div>
+   		<div class="row">
+			<div class="col-25">
+				<label for="cemail">Email</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="cemail" name="cemail">
+    		</div>
+   		</div>
+  		<div class="row">
+			<div class="col-25">
+				<label for="csubjek">Subjek</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="csubjek" name="csubjek">
+    		</div>
+   		</div>
+  		<div class="row">
+			<div class="col-25">
+			<label for="cpesan">Pesan</label>
+			</div>
+			<div class="col-75">
+				<input type="text" id="cpesan" name="cpesan">
+    		</div>
+   		</div>
+		<div class="row">
+			<input type="submit" value="Kirim">
+   		</div>    		
+	</form>
+	</div>
+</div>
+</section>
+
+<section id="masuk">
+	<div class="dua">
+	<div id="judul">DAFTAR AKUN</div>
+	<div>
+	<form method="post" id="aform" name="aform">
+		<div class="in">
+		    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbethanychurch.org.uk%2Fwp-content%2Fuploads%2F2018%2F09%2Fprofile-icon-png-black-6.png&f=1&nofb=1" class="imglogo">
+		    <input type="namalengkap" name="nl" placeholder="Nama Lengkap">
+		</div>
+
+		<div class="in">
+		    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbethanychurch.org.uk%2Fwp-content%2Fuploads%2F2018%2F09%2Fprofile-icon-png-black-6.png&f=1&nofb=1"  class="imglogo">
+		    <input type="namaid" name="nl2" placeholder="ID">
+		</div>
+		  
+		<div class="in">
+		    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F36%2F36175.png&f=1&nofb=1" class="imglogo">
+		    <input type="password" name="pw" id="pw" placeholder="Password" onclick="okp()">
+		</div>
+
+		<div class="in">
+		    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn2.iconfinder.com%2Fdata%2Ficons%2Finsurance-3%2F32%2Fsecurity-512.png&f=1&nofb=1" class="imglogo">
+		    <input type="email" name="email" placeholder="Email">
+		</div>
+			
+		<button id="submit" name="daftar" width="165" onclick="cek()">Daftar</button>
+		</form>
+	</div>
+	</div>
+</section>
+
+<footer>
+	<center>
+		<a href="#awal"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fwhite%2Fup-xxl.png&f=1&nofb=1" width="20" title="Ke Awal"></a>
+		<b><font color="#FEFAE0">copyright &copy; 2021 - Dieny 'Izzaty</font></b>
+	</center>
+</footer>
+</body>
+</html>
